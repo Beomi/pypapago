@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pypapago',
-    version='0.1.1',
+    version='0.1.1.1',
     url='https://github.com/Beomi/pypapago',
     license='MIT',
     author='Junbum Lee',
@@ -16,5 +16,5 @@ setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    install_requires=['requests<3'],
+    install_requires=['requests<3', 'tqdm<5'],
 )
