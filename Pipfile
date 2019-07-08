@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 requests = "<2.23"
+tqdm = "*"
 
 [dev-packages]
 codecov = "*"

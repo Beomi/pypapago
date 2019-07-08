@@ -3,6 +3,7 @@ import re
 import requests
 from multiprocessing import Pool, cpu_count
 from functools import partial
+from tqdm.auto import tqdm
 
 
 class Translator:
@@ -70,8 +71,10 @@ class Translator:
         :return: List of translated texts
         """
         with Pool(workers or cpu_count()) as pool:
-            result = pool.map(func=partial(self.translate, source=source, target=target, verbose=verbose),
-                              iterable=queries)
+            result = list(tqdm(pool.imap(
+                func=partial(self.translate, source=source, target=target, verbose=verbose),
+                iterable=queries
+            ), total=len(queries)))
             pool.close()
             pool.join()
             return result
