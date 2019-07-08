@@ -1,4 +1,4 @@
-# pypapago
+# pypapago [![codecov](https://codecov.io/gh/Beomi/pypapago/branch/master/graph/badge.svg)](https://codecov.io/gh/Beomi/pypapago)
 
 Unofficial python wrapper for [papago translate service](https://papago.naver.com).
 
