@@ -1,7 +1,11 @@
 # THIS PROJECT is ARCHIVED!
 
-This project is no longer maintained by author.
+This project is no longer maintained by the author.
 No additional support is provided.
+
+If you're still interested in the Papago's translation service, plz follow the direction below:
+
+https://developers.naver.com/docs/papago/papago-nmt-overview.md
 
 ---
 
